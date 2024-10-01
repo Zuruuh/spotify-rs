@@ -88,7 +88,7 @@ pub struct Client<A: AuthenticationState, F: AuthFlow, V: Verifier> {
     pub(crate) auth: A,
     pub(crate) oauth: OAuthClient,
     pub(crate) http: reqwest::Client,
-    pub(crate) verifier: V,
+    pub verifier: V,
     marker: PhantomData<F>,
 }
 

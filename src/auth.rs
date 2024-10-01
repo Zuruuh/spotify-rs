@@ -101,7 +101,7 @@ pub struct ClientCredsFlow {
 pub struct NoVerifier;
 #[derive(Debug)]
 
-pub struct CsrfVerifier(pub(crate) CsrfToken);
+pub struct CsrfVerifier(pub CsrfToken);
 
 #[derive(Debug)]
 pub struct PkceVerifier {
