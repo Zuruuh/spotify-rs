@@ -144,7 +144,7 @@ pub(crate) fn body_list<T: AsRef<str>>(name: &str, list: &[T]) -> Body<serde_jso
 pub use auth::{AuthCodeFlow, AuthCodePkceFlow, ClientCredsFlow};
 pub use client::{AuthCodeClient, AuthCodePkceClient, ClientCredsClient};
 pub use error::{Error, Result as SpotifyResult};
-pub use oauth2::RedirectUrl;
+pub use oauth2::{CsrfToken, RedirectUrl};
 
 /// Represents an empty API response.
 pub struct Nil;
